@@ -10,11 +10,21 @@ function loadScript(src) {
 
 // Load sidebar.js and dropdown.js dynamically
 Promise.all([
-  loadScript("../js/loader.js"),
-  loadScript("../js/filter-dropdown.js"),
-  loadScript("../js/quill-text-editor.js"),
-  loadScript("../js/single-file-uploader.js"),
-  loadScript("../js/multi-file-uploader.js"),
+  loadScript(
+    "https://cdn.jsdelivr.net/gh/vitasoftsolutions/assets-admin@latest/blade-admin-template/asset/js/loader.js"
+  ),
+  loadScript(
+    "https://cdn.jsdelivr.net/gh/vitasoftsolutions/assets-admin@latest/blade-admin-template/asset/js/filter-dropdown.js"
+  ),
+  loadScript(
+    "https://cdn.jsdelivr.net/gh/vitasoftsolutions/assets-admin@latest/blade-admin-template/asset/js/quill-text-editor.js"
+  ),
+  loadScript(
+    "https://cdn.jsdelivr.net/gh/vitasoftsolutions/assets-admin@latest/blade-admin-template/asset/js/single-file-uploader.js"
+  ),
+  loadScript(
+    "https://cdn.jsdelivr.net/gh/vitasoftsolutions/assets-admin@latest/blade-admin-template/asset/js/multi-file-uploader.js"
+  ),
 ])
   .then(() => {
     console.log("All scripts loaded successfully!");
