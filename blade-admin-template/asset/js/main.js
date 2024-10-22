@@ -15,6 +15,7 @@ Promise.all([
   loadScript("quill-text-editor.js"),
   loadScript("single-file-uploader.js"),
   loadScript("multi-file-uploader.js"),
+  // loadScript("multi-file-uploader.js"),
 ])
   .then(() => {
     console.log("All scripts loaded successfully!");
