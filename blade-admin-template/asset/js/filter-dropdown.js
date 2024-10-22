@@ -7,23 +7,11 @@ const filterDropdownButton = document.getElementById(
   "dropdownMenuIconHorizontalButton"
 );
 
-const dropdownInstance = new Dropdown(filterDropdown, filterDropdownButton);
+if (filterDropdown && filterDropdownButton) {
+  const dropdownInstance = new Dropdown(filterDropdown, filterDropdownButton);
 
-// filterDropdownButton.addEventListener("click", () => {
-//   // Toggle dropdown using Vitasoftsolutionsmethod
-//   dropdownInstance.toggle();
-// });
-
-// resetButton.addEventListener("click", () => {
-//   console.log(filterDropdown);
-//   console.log("Filter button clicked!");
-// });
-
-cancelButton.addEventListener("click", () => {
-  console.log("cancel button clicked!");
-  dropdownInstance.hide();
-});
-
-// searchButton.addEventListener("click", () => {
-//   console.log("Search button clicked!");
-// });
+  cancelButton.addEventListener("click", () => {
+    console.log("cancel button clicked!");
+    dropdownInstance.hide();
+  });
+}
