@@ -10,11 +10,11 @@ function loadScript(src) {
 
 // Load sidebar.js and dropdown.js dynamically
 Promise.all([
-  loadScript("loader.js"),
-  loadScript("filter-dropdown.js"),
-  loadScript("quill-text-editor.js"),
-  loadScript("single-file-uploader.js"),
-  loadScript("multi-file-uploader.js"),
+  loadScript("../js/loader.js"),
+  loadScript("../js/filter-dropdown.js"),
+  loadScript("../js/quill-text-editor.js"),
+  loadScript("../js/single-file-uploader.js"),
+  loadScript("../js/multi-file-uploader.js"),
 ])
   .then(() => {
     console.log("All scripts loaded successfully!");
